@@ -4,4 +4,9 @@
     <string name="title_part2">On going all out</string>
     <string name="title_part3">Find a team on your city, and dominate the league</string>
     <string name="start_button">Get started!</string>
+    <string name="league">Desired league:</string>
+    <string name="men">Men</string>
+    <string name="women">Women</string>
+    <string name="coed">Co-ed</string>
+    <string name="next">Next</string>
 </resources>
