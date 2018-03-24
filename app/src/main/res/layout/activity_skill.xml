@@ -7,18 +7,18 @@
     tools:context="com.rin.swoosh.Controller.WelcomeActivity">
 
     <ImageView
-        android:id="@+id/leagueImage"
+        android:id="@+id/skillImage"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:contentDescription="@string/skill_im"
         android:scaleType="centerCrop"
-        android:src="@drawable/desiredleaguebg"
+        android:src="@drawable/beginnerballerbg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        android:contentDescription="@string/league_im"/>
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/logoImage"
@@ -27,85 +27,76 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
+        android:contentDescription="@string/logo"
         android:scaleType="fitCenter"
         android:src="@drawable/swooshlogo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/leagueImage"
-        android:contentDescription="@string/logo" />
+        app:layout_constraintTop_toTopOf="@id/skillImage" />
 
     <TextView
-        android:id="@+id/leagueText"
+        android:id="@+id/skillText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/montserrat"
-        android:text="@string/league"
+        android:text="@string/skill"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logoImage" />
+
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="72dp"
-        android:orientation="vertical"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/leagueText">
+        app:layout_constraintTop_toBottomOf="@+id/skillText">
 
         <ToggleButton
-            android:id="@+id/menToggleButton"
-            android:layout_width="match_parent"
+            android:id="@+id/beginnerToggleButton"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
             android:background="@drawable/toggle_selection"
             android:fontFamily="@font/montserrat"
-            android:text="@string/men"
+            android:text="@string/beginner"
             android:textAlignment="center"
             android:textColor="@android:color/white"
-            android:textOff="@string/men"
-            android:textOn="@string/men" />
+            android:textOff="@string/beginner"
+            android:textOn="@string/beginner" />
 
         <ToggleButton
-            android:id="@+id/womenToggleButton"
-            android:layout_width="match_parent"
+            android:id="@+id/ballerToggleButton"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
             android:background="@drawable/toggle_selection"
             android:fontFamily="@font/montserrat"
-            android:text="@string/women"
+            android:text="@string/baller"
             android:textAlignment="center"
             android:textColor="@android:color/white"
-            android:textOff="@string/women"
-            android:textOn="@string/women" />
+            android:textOff="@string/baller"
+            android:textOn="@string/baller" />
 
-        <ToggleButton
-            android:id="@+id/coedToggleButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/toggle_selection"
-            android:fontFamily="@font/montserrat"
-            android:text="@string/coed"
-            android:textAlignment="center"
-            android:textColor="@android:color/white"
-            android:textOff="@string/coed"
-            android:textOn="@string/coed" />
     </LinearLayout>
 
     <Button
-        android:id="@+id/nextButton"
+        android:id="@+id/finishButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
@@ -113,13 +104,14 @@
         android:layout_marginStart="8dp"
         android:background="@drawable/swoosh_button"
         android:fontFamily="@font/montserrat"
-        android:text="@string/next_button"
+        android:text="@string/finish_button"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="@android:color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/leagueImage"
+        app:layout_constraintBottom_toBottomOf="@+id/skillImage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
 
 </android.support.constraint.ConstraintLayout>
 
